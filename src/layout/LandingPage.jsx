@@ -8,6 +8,8 @@ import Classes from '../classes/index'
 import Subplans from '../subplans/index'
 import Benefits from '../benefits/index'
 import Formlast from '../formlast/index'
+import WhystudyWithus from '../components/whystudywithus/WhystudyWithus'
+import Classroom from '../components/classroom/Classroom'
 
 function LandingPage() {
   return (
@@ -15,13 +17,14 @@ function LandingPage() {
         <Header/>
         <Banner/>
         <Subscription/>
+        <WhystudyWithus/>
+        <Classroom/>
         <Joinprep/>
         <Prepyoutube/>
         <Classes/>
         <Subplans/>
         <Benefits/>
        <Formlast/>
-
     </div>
   )
 }

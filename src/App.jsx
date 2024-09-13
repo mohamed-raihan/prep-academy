@@ -12,14 +12,19 @@ import Benefits from './benefits/index'
 import Plans from './subplans/index'
 import Class from './classes/index'
 // import Footer from './layout/Footer'
+import './App.css'
+import Classroom from './components/classroom/Classroom'
+import WhystudyWithus from './components/whystudywithus/WhystudyWithus'
+import LandingPage from './layout/LandingPage'
 
 
 const App = () => {
   return (
+
     <Router>
       <div>
         <Routes>
-        <Route path='/' element={<LandingPage/>}/>
+          <Route path='/' element={<LandingPage/>}/>
           <Route path='/home' element={<LandingPage/>}/>
           {/* <Route path='/header' element={<Header/>}/>
           <Route path='/banner' element={<Banner/>}/>
@@ -31,7 +36,6 @@ const App = () => {
           <Route path='/plans' element={<Plans/>}/>
           <Route path='/catclass' element={<Class/>}/>
           <Route path='/footer' element={<Footer/>}/> */}
-
         </Routes>
       </div>
     </Router>
