@@ -1,0 +1,84 @@
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline; /* Align text properly */
+    font-family: Arial, sans-serif; /* Or your preferred font */
+  }
+  
+  .text-left {
+    color: #066; /* Dark teal color for 'Why Study' */
+    font-size: 2.5em; /* Adjust size as needed */
+  }
+  
+  .text-right {
+    color: #F60; /* Orange color for 'With Us?' */
+    font-size: 2.5em; /* Adjust size as needed */
+    position: relative;
+    margin-left: 8px; /* Some spacing between 'Why Study' and 'With Us?' */
+  }
+  
+  .text-right::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px; /* Height of the curved line */
+    left: 30px;
+    bottom: -5px; /* Adjust the distance of the curve from the text */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><path d="M 0 15 Q 50 0, 100 15" stroke="%23F60" fill="transparent"/></svg>');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  } 
+  
+.paragraph{
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+ }
+
+ .card .card-title{
+    font-weight: bold;
+    font-size:1.5rem;
+    margin: 20px 0px;
+    color: #FD661F;
+    transition: color 0.3s ease;
+ }
+ .card-text{
+  font-family: "Roboto", system-ui;
+  font-weight: 300;
+
+}
+
+.card:hover .card-title {
+  color: #066;
+
+}
+
+.card img {
+  transition: transform 0.5s ease; /* Smooth transition for the flip effect */
+}
+
+.card:hover img {
+  transform: scaleX(-1); /* Mirror the icon horizontally on hover */
+}
+
+@media (min-width: 768px) {
+  .fs-md-1 {
+    font-size: 1.5rem; /* Example size for medium devices */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-left{
+    font-size: 35px;
+  }
+  .text-right{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card{
+    margin-top: 22px;
+  }
+}
+
