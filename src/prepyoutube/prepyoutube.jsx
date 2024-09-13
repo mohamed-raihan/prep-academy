@@ -5,7 +5,7 @@ import elephant from '../assets/images/elephant.png'
 
 const VideoContentSection = () => {
   return (
-    <Container fluid className="my-5" style={{backgroundColor:"#0B7077"}}>
+    <Container fluid className="my-5" style={{backgroundColor:"#0B7077",width:"95%"}}>
       <Row className="align-items-center">
         {/* Left Side: YouTube Video Section */}
         <Col md={6} className="mb-4 mb-md-0 ">

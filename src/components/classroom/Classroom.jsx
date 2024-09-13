@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 import man from '../../assets/images/classroomMan.png'
 import './Classroom.css'; 
-import rectangle from '../../assets/images/rectangle.png'
+import rectangle from '../../assets/images/rectangleN.png'
 import icon1 from '../../assets/images/icon1.png'
 import icon2 from '../../assets/images/icon2.png'
 import icon3 from '../../assets/images/icon3.png'
@@ -32,8 +32,8 @@ function Classroom() {
                                 <div><img width={'150px'} src={icon3} alt="" /></div>
                                 <span className='text-light'>45 CAT + 48 non-CAT Sectional tests Mentorship Programs GD/PI.</span>
                             </div>
-                            <div className=''>
-                                <Button className='purchase-button d-flex  align-item-center px-3 border' style={{backgroundColor:"#0B7077"}}>Purchase<FontAwesomeIcon style={{backgroundColor:"#FBFBFB",borderRadius:'50%',color:"#FD661F",display:'inline-block'}} className='ms-2 p-1' icon={faArrowRight} /></Button>
+                            <div>
+                                <Button className='purchase-button d-flex  align-item-center justify-content-center  p-3 border' style={{backgroundColor:"#0B7077"}}>Purchase<FontAwesomeIcon style={{backgroundColor:"#FBFBFB",borderRadius:'50%',color:"#FD661F",display:'inline-block'}} className='ms-2 p-1' icon={faArrowRight} /></Button>
                             </div>
                         </div>
                     </div>

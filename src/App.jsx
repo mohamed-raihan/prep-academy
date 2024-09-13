@@ -15,13 +15,13 @@ import Class from './classes/index'
 import './App.css'
 import Classroom from './components/classroom/Classroom'
 import WhystudyWithus from './components/whystudywithus/WhystudyWithus'
-import LandingPage from './layout/LandingPage'
+// import LandingPage from './layout/LandingPage'
 
 
 const App = () => {
   return (
 
-    <Router>
+    
       <div>
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
@@ -38,7 +38,7 @@ const App = () => {
           <Route path='/footer' element={<Footer/>}/> */}
         </Routes>
       </div>
-    </Router>
+    
   );
 };
 
