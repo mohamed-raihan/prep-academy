@@ -1,0 +1,55 @@
+.container-1 {
+    width: 95%; 
+   height: 373px;
+    background: url(../assets/images/joinprep.png) no-repeat center ; 
+    background-size: cover; 
+    background-color: #0B7077; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */
+    padding:0 20px;
+    box-sizing: border-box; 
+    margin: 40px auto;
+  }
+  
+  .content {
+    /* text-align: center; */
+    color: white;
+    max-width: 90%; 
+    position: relative;
+    left: 10%;
+    top: 5%;
+  }
+  
+  button {
+    width: 250px;  
+    height: 58px;  
+    background-color: #3DCBB1;
+    border: none;    
+    color: white; 
+    font-size: 16px;  
+    cursor: pointer; 
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      height: auto; 
+      padding: 20px;     }
+    
+    button {
+      width: 200px; 
+      height: 50px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      height: auto; 
+    }
+  
+    button {
+      width: 180px; 
+      height: 45px; 
+    }
+  }
+  
