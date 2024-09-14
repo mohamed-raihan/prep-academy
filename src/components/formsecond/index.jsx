@@ -1,10 +1,10 @@
 import React from 'react'
-import Subscription from './Sub'
+import Formsecond from './Formsecond'
 
 function index() {
   return (
     <div>
-        <Subscription/>
+     <Formsecond/>   
     </div>
   )
 }

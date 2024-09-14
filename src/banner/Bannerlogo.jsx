@@ -38,7 +38,7 @@ const Banner = () => {
       </Container>
 
       {/* Form After the Banner Content for Smaller Screens */}
-      <div className="form-container d-block d-md-none mt-4">
+      <div className="form-containermobile d-block d-md-none mt-4">
         <Form />
       </div>
     </div>
