@@ -11,11 +11,13 @@ import Formlast from './formlast/index';
 import Benefits from './benefits/index'
 import Plans from './subplans/index'
 import Class from './classes/index'
-// import Footer from './layout/Footer'
+import Footer from './layout/Footer'
 import './App.css'
 import Classroom from './components/classroom/Classroom'
 import WhystudyWithus from './components/whystudywithus/WhystudyWithus'
 // import LandingPage from './layout/LandingPage'
+import Formsecond from './components/formsecond/index'
+import Doyouhavequestions from './components/doyouhavequestion/index'
 
 
 const App = () => {
@@ -26,7 +28,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/home' element={<LandingPage/>}/>
-          {/* <Route path='/header' element={<Header/>}/>
+          <Route path='/header' element={<Header/>}/>
           <Route path='/banner' element={<Banner/>}/>
           <Route path='/subscription' element={<Subscription/>}/>
           <Route path='/joinprep' element={<Join/>}/>
@@ -35,7 +37,10 @@ const App = () => {
           <Route path='/benefits' element={<Benefits/>}/>
           <Route path='/plans' element={<Plans/>}/>
           <Route path='/catclass' element={<Class/>}/>
-          <Route path='/footer' element={<Footer/>}/> */}
+          <Route path='/footer' element={<Footer/>}/>
+          <Route path='/formsecond' element={<Formsecond/>}/>
+          <Route path='/questions' element={<Doyouhavequestions/>}/>
+
         </Routes>
       </div>
     

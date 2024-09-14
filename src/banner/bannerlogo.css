@@ -1,46 +1,71 @@
 .banner-container {
-  background-image: url('../assets/images/Rectangle.png'); 
+  background-image: url('../assets/images/Rectangle.png');
   background-size: cover; 
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
-  height: 898px; 
-  width: 95%; 
-  display: flex; 
-  align-items: center; 
-  margin: 40px auto; 
+  height: 898px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
   border-radius: 15px;
   padding: 0 20px;
+  position: relative; 
+  overflow: hidden;
 }
 
 .banner-content {
-  max-width: 600px; 
+  max-width: 600px;
   margin-right: 20px;
+  z-index: 2; 
 }
 
 .banner-button {
-  width: 160px; 
-  height: 45px; 
+  width: 160px;
+  height: 45px;
   margin-top: 20px;
 }
 
 .form-container {
   max-width: 400px;
+  z-index: 2; 
 }
 
 @media (max-width: 768px) {
   .banner-container {
-    height: auto; 
+    height: 600px;
     flex-direction: column; 
     padding: 20px;
   }
 
   .banner-content {
-    margin-right: 0; 
-    margin-bottom: 20px; 
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center; 
   }
 
   .form-container {
-    max-width: 100%; 
-    display: none;
+    max-width: 100%;
+    display: block; 
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-container {
+    width: 100%; 
+    padding: 15px; 
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem; 
+  }
+
+  .banner-content p {
+    font-size: 1rem; 
+  }
+
+  .banner-button {
+    width: 140px; 
+    height: 40px;
   }
 }
