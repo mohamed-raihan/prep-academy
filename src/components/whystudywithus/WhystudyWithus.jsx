@@ -9,8 +9,6 @@ import vector5 from '../../assets/images/vector5.png'
 import vector6 from '../../assets/images/vector6.png'
 
 import { Button, Card, Col, Row } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 
 function WhystudyWithus() {
   return (

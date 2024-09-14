@@ -15,6 +15,7 @@ import Footer from './layout/Footer'
 import './App.css'
 import Classroom from './components/classroom/Classroom'
 import WhystudyWithus from './components/whystudywithus/WhystudyWithus'
+import Faculty from './components/faculty/Faculty';
 // import LandingPage from './layout/LandingPage'
 import Formsecond from './components/formsecond/index'
 import Doyouhavequestions from './components/doyouhavequestion/index'
@@ -36,6 +37,7 @@ const App = () => {
           <Route path='/formlast' element={<Formlast/>}/>
           <Route path='/benefits' element={<Benefits/>}/>
           <Route path='/plans' element={<Plans/>}/>
+          <Route path='/faculty' element={<Faculty/>}/>
           <Route path='/catclass' element={<Class/>}/>
           <Route path='/footer' element={<Footer/>}/>
           <Route path='/formsecond' element={<Formsecond/>}/>

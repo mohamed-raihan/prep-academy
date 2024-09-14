@@ -11,25 +11,28 @@ import Benefits from '../benefits/index'
 import Formlast from '../formlast/index'
 import WhystudyWithus from '../components/whystudywithus/WhystudyWithus'
 import Classroom from '../components/classroom/Classroom'
+import Faculty from '../components/faculty/Faculty'
+import { Route, Routes } from 'react-router-dom'
 import Formsecond from '../components/formsecond'
 import Footer from '../layout/Footer'
 
 function LandingPage() {
   return (
     <div>
-        <Header/>
-        <Banner/>
-        <Subscription/>
-        <WhystudyWithus/>
-        <Formsecond/>
+          <Header/>
+          <Banner/>
+          <Subscription/>
+          <WhystudyWithus/>
+          <Formsecond/>
         <Classroom/>
-        <Joinprep/>
-        <Prepyoutube/>
-        <Classes/>
-        <Subplans/>
-        <Doyohaveanyquestion/>
+          <Joinprep/>
+          <Prepyoutube/>
+          <Classes/>
+          <Subplans/>
+          <Faculty/>
+          <Doyohaveanyquestion/>
         <Benefits/>
-        <Formlast/>
+          <Formlast/>
         <Footer/>
     </div>
   )
