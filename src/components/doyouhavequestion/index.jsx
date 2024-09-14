@@ -1,10 +1,11 @@
 import React from 'react'
-import Subscription from './Sub'
+import Question from './Questions'
+import AccordionUsage from './Questions'
 
 function index() {
   return (
     <div>
-        <Subscription/>
+      <AccordionUsage/>
     </div>
   )
 }

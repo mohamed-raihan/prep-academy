@@ -1,0 +1,41 @@
+
+.footer {
+    background-color:black; 
+    color: #fff; 
+    padding: 40px 0;
+  }
+  
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #ffc107; 
+  }
+  
+ 
+  .footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+ 
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ffc107;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center; 
+    }
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  }
+  
