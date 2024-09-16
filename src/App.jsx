@@ -19,6 +19,7 @@ import Faculty from './components/faculty/Faculty';
 // import LandingPage from './layout/LandingPage'
 import Formsecond from './components/formsecond/index'
 import Doyouhavequestions from './components/doyouhavequestion/index'
+import Campaign from './components/Campaign';
 
 
 const App = () => {
@@ -26,24 +27,27 @@ const App = () => {
 
     
       <div>
-        <Routes>
-          <Route path='/' element={<LandingPage/>}/>
-          <Route path='/home' element={<LandingPage/>}/>
-          <Route path='/header' element={<Header/>}/>
-          <Route path='/banner' element={<Banner/>}/>
-          <Route path='/subscription' element={<Subscription/>}/>
-          <Route path='/joinprep' element={<Join/>}/>
-          <Route path='/prepyoutube' element={<Prepyoutube/>}/>
-          <Route path='/formlast' element={<Formlast/>}/>
-          <Route path='/benefits' element={<Benefits/>}/>
-          <Route path='/plans' element={<Plans/>}/>
-          <Route path='/faculty' element={<Faculty/>}/>
-          <Route path='/catclass' element={<Class/>}/>
-          <Route path='/footer' element={<Footer/>}/>
-          <Route path='/formsecond' element={<Formsecond/>}/>
-          <Route path='/questions' element={<Doyouhavequestions/>}/>
-
-        </Routes>
+        {/* <Router> */}
+          <Routes>
+            <Route path='/' element={<LandingPage/>}/>
+            <Route path='/home' element={<LandingPage/>}/>
+            <Route path='/campaign' element={<Campaign/>}/>
+            <Route path='/header' element={<Header/>}/>
+            <Route path='/banner' element={<Banner/>}/>
+            <Route path='/subscription' element={<Subscription/>}/>
+            <Route path='/joinprep' element={<Join/>}/>
+            <Route path='/prepyoutube' element={<Prepyoutube/>}/>
+            <Route path='/formlast' element={<Formlast/>}/>
+            <Route path='/benefits' element={<Benefits/>}/>
+            <Route path='/plans' element={<Plans/>}/>
+            <Route path='/faculty' element={<Faculty/>}/>
+            <Route path='/catclass' element={<Class/>}/>
+            <Route path='/footer' element={<Footer/>}/>
+            <Route path='/formsecond' element={<Formsecond/>}/>
+            <Route path='/questions' element={<Doyouhavequestions/>}/>
+  
+          </Routes>
+        {/* </Router> */}
       </div>
     
   );
