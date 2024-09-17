@@ -38,7 +38,7 @@
   }
   .dots-container {
     position: absolute;
-    bottom: -1%;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%); 
     display: flex; 
