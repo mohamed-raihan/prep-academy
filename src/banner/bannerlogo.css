@@ -1,8 +1,4 @@
 .banner-container {
-  background-image: url('../assets/images/Rectangle.png');
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
   height: 898px;
   width: 95%;
   display: flex;
@@ -33,7 +29,7 @@
 
 @media (max-width: 768px) {
   .banner-container {
-    height: 600px;
+    height: 620px;
     flex-direction: column; 
     padding: 20px;
   }

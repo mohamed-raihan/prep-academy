@@ -19,15 +19,20 @@ import Faculty from './components/faculty/Faculty';
 // import LandingPage from './layout/LandingPage'
 import Formsecond from './components/formsecond/index'
 import Doyouhavequestions from './components/doyouhavequestion/index'
+import Dashboard  from './layout/Dashboard'
+
+
 
 
 const App = () => {
-  return (
+  
 
+  return (
     
       <div>
         <Routes>
-          <Route path='/' element={<LandingPage/>}/>
+          
+          <Route path='/' element={<Dashboard/>}/>
           <Route path='/home' element={<LandingPage/>}/>
           <Route path='/header' element={<Header/>}/>
           <Route path='/banner' element={<Banner/>}/>

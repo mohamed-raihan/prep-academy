@@ -1,4 +1,9 @@
 /* In your main CSS file */
+*{
+  overflow-x: hidden;
+}
+
+
 .section-spacing {
     margin-top: 50px; /* Adjust spacing as needed */
   }

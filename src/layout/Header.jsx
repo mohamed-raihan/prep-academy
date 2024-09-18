@@ -1,10 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import Headerlogo from '../assets/images/headerlogo.png';
-import Selectlanguage from '../assets/images/selectlanguage.png';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
@@ -35,7 +32,7 @@ const Header = () => {
             >
  <Dropdown>
       <Dropdown.Toggle variant="warning" id="dropdown-basic" style={{border:"3px solid",fontWeight:"bold",}}>
-        Select language
+        Select language 
       </Dropdown.Toggle>
 
       <Dropdown.Menu>

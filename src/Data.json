@@ -1,0 +1,78 @@
+{
+    "cat":[
+        {
+            "Banner" : {
+                "bannerheading" : "Make Yourself An <br /> IIM Alumni  ",
+                "bannerlogo"  :"../src/assets/images/rectangle.png",
+                "catlogo" :{
+                    "cat1" :"../src/assets/images/cat1.png",
+                     "cat2" :"../src/assets/images/cat1.png",
+                      "cat3" :"../src/assets/images/cat1.png"
+
+                },
+                "bannertext" :{
+                    "cat1" :"<b>CAT online and Offline classes</b>. Cover your syllabus well in advance with a regular flow of live online or classroom classes.",
+                    "cat2" :"<b>Regular Tests</b>. Chapter tests, part tests, Mock tests are held regularly to help you introspect.",
+                    "cat3" :" <b>Mentoring</b>. Regular mentoring by our esteemed mentors from top engineering colleges."
+                },
+                "form" :{
+                    "heading":"Fast track your CAT preparation"
+                }
+            },
+            
+            "Subscription" :{
+               "heading" :" Crack CAT & Other MBA  <br /> Entrance Tests with <br /><span className='span 1' >Prep</span> <span className='span2'>Academy</span>",
+               "content" :"Welcome to Prep Academy, your premier destination for unlocking the potential within you and achieving your dreams Carrier. With  our years of experience and expertise, we have crafted a dynamic learning environment tailored to cater to the unique needs of every student.",
+               "image":"../src/assets/images/Hero.png"
+           
+            },
+            "Whystudywithus":{
+                "subheading":" Are you ready to conquer the world? Your CAT 2024 journey might seem daunting, but remember, every great achievement starts with a single step. Believe in yourself, because you hold the power to make your dreams a reality!"
+            },
+            "Classroom" :{
+                "heading":"Classroom-Offline",
+                "rightimage": "./assets/images/rectangleN.png",
+                "cat" :{
+                    "cat1":"./assets/images/icon1.png",
+                    "cat2":"./assets/images/icon2.png",
+                    "cat3":"./assets/images/icon3.png"
+                },
+                "catcontent" :{
+                    "cat1":"250 + Hours on CAT sessions & on non-CAT concepts.",
+                    "cat2":" 30 CAT + 70 non-CAT mocks 5600 topic-wise practice questions physical study material included.", 
+                    "cat3":"45 CAT + 48 non-CAT Sectional tests Mentorship Programs GD/PI."
+                }
+            },
+            "Joinprep":{
+                "heading":"Join Prep Academy now to get 35% off",
+                "subheading":" Join with Prep Academy and achieve your dream career. For getting <br /> the exciting offers for the upcoming batches enrol today itself.",
+                "button":"Join Prep Academy"
+            },
+            "Prepyoutube" :{
+                "heading":"Crack CAT & Other MBA <br /> Entrance Tests with Unacademy",
+                "youtubevideo":"https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "headingright" :{
+                   "heading1":"CAT 2024 SUCCESS MANTRA",
+                   "heading2":"Crack CAT & Other MBA <br />Entrance Tests with Prep Acdemy",
+                   "subheading":" Stay in the loop and never miss out! Subscribe to our YouTube channel for the latest updates and insightful classes.  We are keep updating exam notification, syllabus and other educational videos all related to CAT exam preparatins."
+                }
+              
+            },
+
+            "Classes" :{
+                "heading":"Most Engaging CAT & Other MBA <br /> Entrance Classes at all time."
+            },
+
+            "Subplans" :{
+                "heading":"Get Subscription to start your preparation.",
+                "subheading":"Begin your journey to success today! Subscribe now <br /> and take the first step towards turning your aspirations <br /> into reality with our valuable insights and resources.",
+                "button" :"View Subscription Plans"
+            }
+        
+        
+           }
+    ]
+ 
+}
+   
+

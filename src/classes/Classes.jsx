@@ -1,6 +1,6 @@
 import React from 'react';
 import './classs.css'
-
+import Data from '../Data.json'
 function VideoLayout() {
   // Sample video IDs from YouTube. Replace with your own video IDs.
   const videosSet1 = ['', '', '', '', ''];
@@ -9,8 +9,10 @@ function VideoLayout() {
   return (
     <div className="main-container">
       {/* First set of videos */}
-      <div className="video-section">
-       <h1 style={{color:"#0B7077"}}>Most Engaging CAT & Other MBA <br /> Entrance Classes at all time.</h1>
+{Data.cat.map((items,index)=>(
+<React.Fragment key={index}>
+<div className="video-section">
+       <h1 style={{color:"#0B7077"}} dangerouslySetInnerHTML={{__html:items.Classes.heading}}></h1>
         <div className="video-grid">
           {videosSet1.map((id, index) => (
             <div className="video-wrapper" key={index}>
@@ -48,6 +50,9 @@ function VideoLayout() {
           ))}
         </div>
       </div>
+</React.Fragment>
+))}
+      
     </div>
   );
 }

@@ -6,6 +6,7 @@ import logo from "../assets/images/Hero.png";
 const Subscription = () => {
   return (
     <div className="responsive-section mt-5">
+      
       <Container fluid className="h-100">
         <Row className="h-100">
           {/* Left Side: Header and Content */}
@@ -14,7 +15,7 @@ const Subscription = () => {
             className="d-flex flex-column justify-content-center align-items-start text-left p-4"
           >
             <h1 className="section-header">
-              Crack CAT & Other MBA <br />
+              Crack CAT & Other MBA  <br />
               Entrance Tests with <br />
               <span className="" style={{ color: "#FD661F" }}>
                 Prep
