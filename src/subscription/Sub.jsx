@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Subscription.css'; 
 import logo from '../assets/images/Hero.png'
 import Data from '../Data.json'
+
+
 
 const Subscription = () => {
   return (
@@ -12,6 +15,7 @@ const Subscription = () => {
   <Container fluid className="h-100">
         <Row className="h-100">
           {/* Left Side: Header and Content */}
+
           <Col md={6} className="d-flex flex-column justify-content-center align-items-start text-left p-4">
        <h1 className="section-header" >
        <span dangerouslySetInnerHTML={{__html:item.Subscription.heading}}></span>
@@ -36,6 +40,8 @@ const Subscription = () => {
             <span className="dot"></span>
           </div>
         </Col>
+         
+
          
         </Row>
       </Container>

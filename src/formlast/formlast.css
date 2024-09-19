@@ -37,6 +37,7 @@
     height: 400px; 
     background-size: contain; 
     margin-bottom: 15px;
+
   }
 
   .formlast-content {
@@ -44,9 +45,28 @@
     max-width: 350px; 
     padding: 15px;
   }
-  .formlastcount{
-    /* width: 10;   */
-    /* margin-top: 100px; */
+
+  
+
+  
+  
+  @media (max-width: 768px) {
+    .formlast-image {
+      width: 100%; 
+      height: 400px; 
+      background-size: contain; 
+      margin-bottom: 15px;
+    }
+  
+    .formlast-content {
+      width: 85%; 
+      max-width: 350px; 
+      padding: 15px;
+    }
+    .formlastcount{
+      /* width: 10;   */
+      /* margin-top: 100px; */
+
 display: none;
   }
 }

@@ -19,7 +19,9 @@ import Faculty from './components/faculty/Faculty';
 // import LandingPage from './layout/LandingPage'
 import Formsecond from './components/formsecond/index'
 import Doyouhavequestions from './components/doyouhavequestion/index'
+
 import Dashboard  from './layout/Dashboard'
+
 
 
 
@@ -30,6 +32,7 @@ const App = () => {
   return (
     
       <div>
+
         <Routes>
           
           <Route path='/' element={<Dashboard/>}/>
@@ -49,6 +52,8 @@ const App = () => {
           <Route path='/questions' element={<Doyouhavequestions/>}/>
 
         </Routes>
+
+
       </div>
     
   );
