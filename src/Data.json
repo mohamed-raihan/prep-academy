@@ -6,8 +6,8 @@
                 "bannerlogo"  :"../src/assets/images/rectangle.png",
                 "catlogo" :{
                     "cat1" :"../src/assets/images/cat1.png",
-                     "cat2" :"../src/assets/images/cat1.png",
-                      "cat3" :"../src/assets/images/cat1.png"
+                     "cat2" :"../src/assets/images/cat2.png",
+                      "cat3" :"../src/assets/images/cat3.png"
 
                 },
                 "bannertext" :{
@@ -21,7 +21,7 @@
             },
             
             "Subscription" :{
-               "heading" :" Crack CAT & Other MBA  <br /> Entrance Tests with <br /><span className='span 1' >Prep</span> <span className='span2'>Academy</span>",
+               "heading" :" Crack CAT & Other MBA  <br /> Entrance Tests with <br />",
                "content" :"Welcome to Prep Academy, your premier destination for unlocking the potential within you and achieving your dreams Carrier. With  our years of experience and expertise, we have crafted a dynamic learning environment tailored to cater to the unique needs of every student.",
                "image":"../src/assets/images/Hero.png"
            
@@ -31,12 +31,6 @@
             },
             "Classroom" :{
                 "heading":"Classroom-Offline",
-                "rightimage": "./assets/images/rectangleN.png",
-                "cat" :{
-                    "cat1":"./assets/images/icon1.png",
-                    "cat2":"./assets/images/icon2.png",
-                    "cat3":"./assets/images/icon3.png"
-                },
                 "catcontent" :{
                     "cat1":"250 + Hours on CAT sessions & on non-CAT concepts.",
                     "cat2":" 30 CAT + 70 non-CAT mocks 5600 topic-wise practice questions physical study material included.", 
@@ -67,6 +61,61 @@
                 "heading":"Get Subscription to start your preparation.",
                 "subheading":"Begin your journey to success today! Subscribe now <br /> and take the first step towards turning your aspirations <br /> into reality with our valuable insights and resources.",
                 "button" :"View Subscription Plans"
+            },
+
+            "Ourfacultymembers":{
+              "heading":{
+                "span1":"Our Faculty",
+                "span2":"Members"
+              },
+              "images":{
+                "faculty1":"./assets/images/faculty1.png",
+                "faculty2":"./assets/images/faculty2.png",
+                "faculty3":"./assets/images/faculty3.png",
+                "faculty4":"./assets/images/faculty4.png",
+                "faculty5":"./assets/images/faculty5.png"
+                
+              },
+              "imagetitle":{
+                "title1":"Avantika Nandakumar",
+                "title2":"Nisha Gupta",
+                "title3":"Gargi Priyadarshan",
+                "title4":" Angel",
+                "title5":"Prachi Roy"
+
+              },
+              "imagediscription":{
+                "description1":"Jesus and Mary, Delhi University",
+                "description2":"Miranda House, Delhi University",
+                "description3":"Jamia Milia Islamia",
+                "description4":"Miranda House, Delhi University",
+                "description5":"Dr B R Ambedkar University, Delhi"
+
+              }
+            },
+
+            "doyouhaveanyquestions":{
+                "accordian" :{
+                    "accordian1":" What happens if you don't attempt all questions in the CAT exam?",
+                    "accordian2":" Is there any restriction on the number of attempts?",
+                    "accordian3":" How difficult is it to crack a CAT exam?",
+                    "accordian4":"What is the best preparation strategy for reading...",
+                    "accordian5":"Setting Goals and Maintaining Focus:"
+                }
+            },
+            "Benefits":{
+                "heading":" Why choose CAT Exam? How can <br /> the IIM brand fast track your career?",
+                "benefits":{
+                    "benefits1":"Better career options",
+                    "benefits2":"Salary Difference between an IIM graduate and others",
+                    "benefits3":"Develop your business and entrepreneurship skills",
+                    "benefits4":"Strengthen your people network and job security"
+
+                }
+            },
+
+            "Footer":{
+                "text":"Are you ready to conquer the world? Your CAT 2024 journey might seem daunting, but remember, every great achievement starts with a single step."
             }
         
         

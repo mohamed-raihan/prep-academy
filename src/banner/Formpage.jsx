@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import './form.css';
 import Data from '../Data.json';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const LoginForm = () => {
+  // const [capval,setcapval] = useState(null)
   return (
     <div className="login-form">
       {Data.cat.map((items, index) => (
@@ -47,12 +49,16 @@ const LoginForm = () => {
             </Form.Group>
 
             {/* "I'm not a robot" Checkbox */}
-            <Form.Group controlId="formBasicCheckbox" className="form-group" style={{ height: "70px", width: "250px", alignContent: "center", backgroundColor: "#D9D9D9" }}>
-              <Form.Check type="checkbox" label="I'm not a robot" style={{ marginLeft: "10%" }} />
+            <Form.Group controlId="formBasicCheckbox" className="form-group" style={{ height: "70px", width: "250px", alignContent: "center" }}>
+             <ReCAPTCHA
+             sitekey={"6Let6kgqAAAAALZ9JUhNbV-5L5H1fj8Xm4cn_oxw"}
+            //  onChange={(val) = setcapval(val)}
+             />
+             
             </Form.Group>
 
             {/* Submit Button */}
-            <Button variant="" type="submit" style={{ backgroundColor: "#0B7077" }}>
+            <Button variant="" type="submit" style={{ backgroundColor: "#0B7077" }} > 
               Get a Callback
             </Button>
           </Form>

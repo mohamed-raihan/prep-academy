@@ -26,18 +26,18 @@ function Classroom() {
                             <h3 className='text-light'>{items.Classroom.heading}</h3>
                             <div className='content-child d-flex mt-5'>
                                 <div><img width={'150px'} src={icon1} alt="" /></div><span className='text-light mt-4'>
-                                    250 + Hours on CAT sessions & on non-CAT concepts.
+                                   {items.Classroom.catcontent.cat1}
                                     </span>
                             </div>
                             <div className='content-child d-flex'>
                                 <div ><img width={'150px'} src={icon2} alt="" /></div>
                                 <span className='text-light'>
-                                    30 CAT + 70 non-CAT mocks 5600 topic-wise practice questions physical study material included.
+                                   {items.Classroom.catcontent.cat2}
                                     </span>
                             </div>
                             <div className='content-child d-flex'>
                                 <div><img width={'150px'} src={icon3} alt="" /></div>
-                                <span className='text-light'>45 CAT + 48 non-CAT Sectional tests Mentorship Programs GD/PI.</span>
+                                <span className='text-light'>{items.Classroom.catcontent.cat3}</span>
                             </div>
                             <div>
                                 <Button className='purchase-button d-flex  align-item-center justify-content-center  p-3 border' style={{backgroundColor:"#0B7077"}}>Purchase<FontAwesomeIcon style={{backgroundColor:"#FBFBFB",borderRadius:'50%',color:"#FD661F",display:'inline-block'}} className='ms-2 p-1' icon={faArrowRight} /></Button>
