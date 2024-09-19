@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header'
 import Banner from '../banner/Bannerlogo'
 import Subscription from '../subscription/Sub'
@@ -12,22 +12,34 @@ import Formlast from '../formlast/index'
 import WhystudyWithus from '../components/whystudywithus/WhystudyWithus'
 import Classroom from '../components/classroom/Classroom'
 import Faculty from '../components/faculty/Faculty'
-import { Route, Routes, useLocation } from 'react-router-dom'
+
+import { Route, Routes, useParams ,useSearchParams} from 'react-router-dom'
+
+
 import Formsecond from '../components/formsecond'
 import Footer from '../layout/Footer'
 import reactGA from 'react-ga'
 
 function LandingPage() {
 
+  const [searchParams,setSearchParams] = useSearchParams();
 
+  const addParams = ()=>{
+    setSearchParams({utm_source:'google',utm_medium:'cpc',utm_campaign:'spring_sale'})
+    }
+
+    useEffect(()=>{
+      addParams()
+    },[])
 
   return (
-    <div>
-        <Header/>
-        <Banner/>
-        <Subscription/>
-        <WhystudyWithus/>
-        <Formsecond/>
+    <div style={{overflowX:"hidden"}}>
+          <Header/>
+          <Banner/>
+          <Subscription/>
+          <WhystudyWithus/>
+          <Formsecond/>
+
         <Classroom/>
         <Joinprep/>
         <Prepyoutube/>

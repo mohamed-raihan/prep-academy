@@ -1,0 +1,1 @@
+// import db from '../src/assets/images/rectangle.png'

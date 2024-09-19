@@ -1,7 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import Headerlogo from '../assets/images/headerlogo.png';
-import Selectlanguage from '../assets/images/selectlanguage.png';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 const Header = () => {
   return (
@@ -17,19 +18,30 @@ const Header = () => {
         </Navbar.Brand>
 
         {/* Move the toggle button to the right */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" style={{width:"50px"}} />
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <div
               style={{
-                backgroundImage: `url(${Selectlanguage})`,
+               
                 width: '263px',
                 height: '57px',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
+                
               }}
-            ></div>
+            >
+ <Dropdown>
+      <Dropdown.Toggle variant="warning" id="dropdown-basic" style={{border:"3px solid",fontWeight:"bold",}}>
+        Select language 
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+            </div>
 
             <Button
               variant=""

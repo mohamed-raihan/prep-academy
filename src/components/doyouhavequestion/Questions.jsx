@@ -1,11 +1,14 @@
 import React from 'react';
 import { Accordion, Container, Row, Col } from 'react-bootstrap';
 import './question.css'; // Import your custom CSS
+import Data from '../../Data.json'
 
 const ResponsiveComponent = () => {
   return (
     <div className="responsive-container">
-      <Container className="p-4">
+{Data.cat.map((items,index)=>(
+  <React.Fragment key={index}>
+  <Container className="p-4">
         <Row>
           <Col md={6}>
             <div
@@ -23,7 +26,7 @@ const ResponsiveComponent = () => {
                   <Accordion.Header>
                     <div className="accordion-header-content">
                       <div className="accordion-title">
-                        What happens if you don't attempt all questions in the CAT exam?
+                        {items.doyouhaveanyquestions.accordian.accordian1}
                       </div>
                     </div>
                   </Accordion.Header>
@@ -39,7 +42,7 @@ Lorem ipsum dolor sit amet consectetur. Senectus suspendisse enim cras porttitor
                   <Accordion.Header>
                     <div className="accordion-header-content">
                       <div className="accordion-title">
-                        Is there any restriction on the number of attempts?
+                      {items.doyouhaveanyquestions.accordian.accordian2}
                       </div>
                     </div>
                   </Accordion.Header>
@@ -55,7 +58,7 @@ Yes, we offer international shipping to select countries. Please refer to our sh
                   <Accordion.Header>
                     <div className="accordion-header-content">
                       <div className="accordion-title">
-                        How difficult is it to crack a CAT exam?
+                          {items.doyouhaveanyquestions.accordian.accordian3}
                       </div>
                     </div>
                   </Accordion.Header>
@@ -72,7 +75,7 @@ customer support team immediately for assistance with returns or exchanges.
                   <Accordion.Header>
                     <div className="accordion-header-content">
                       <div className="accordion-title">
-                        How difficult is it to crack a CAT exam?
+                        {items.doyouhaveanyquestions.accordian.accordian4}
                       </div>
                     </div>
                   </Accordion.Header>
@@ -90,7 +93,7 @@ We offer a 15-day return window for a full refund or exchange on unused items. R
                   <Accordion.Header>
                     <div className="accordion-header-content">
                       <div className="accordion-title">
-                        How difficult is it to crack a CAT exam?
+                       {items.doyouhaveanyquestions.accordian.accordian5}
                       </div>
                     </div>
                   </Accordion.Header>
@@ -117,6 +120,9 @@ We offer a 15-day return window for a full refund or exchange on unused items. R
 
         </Row>
       </Container>
+  </React.Fragment>
+))}
+    
     </div>
   );
 };

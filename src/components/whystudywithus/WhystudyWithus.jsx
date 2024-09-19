@@ -1,5 +1,6 @@
 import React from 'react'
 import './WhystudyWithus.css'
+import Data from '../../Data.json'
 import heading from '../../assets/images/whystudywithus.png'
 import vector1 from '../../assets/images/vector1.png'
 import vector2 from '../../assets/images/vector2.png'
@@ -13,7 +14,9 @@ import { Button, Card, Col, Row } from 'react-bootstrap'
 function WhystudyWithus() {
   return (
     <div className='py-5' style={{backgroundColor:"#FBFBFB"}}>
-      <div className='head d-flex flex-column justify-content-center  align-items-center'>
+      {Data.cat.map((items,index)=>(
+        <React.Fragment key={index}>
+       <div className='head d-flex flex-column justify-content-center  align-items-center'>
         <div className='header-container'>
           <span className='text-left fw-bold'>Why Study</span>
           <span className='text-right fw-bold'>With Us?</span>
@@ -21,10 +24,15 @@ function WhystudyWithus() {
         <div className='d-flex mt-3 justify-content-center align-items-center  w-75' 
              style={{width:"1476.99px", height:"153px", position:"relative"}}>
           <p  className='paragraph text-center mt-3 fs-md-1 fs-sm-5'>
-            Are you ready to conquer the world? Your CAT 2024 journey might seem daunting, but remember, every great achievement starts with a single step. Believe in yourself, because you hold the power to make your dreams a reality!
+            {items.Whystudywithus.subheading}
+           
           </p>
         </div>
       </div>
+        </React.Fragment>
+        
+      ))}
+      
 
       <div className='mt-5 d-flex flex-column justify-content-center align-items-center'>
         <div className='d-flex justify-content-center align-items-center'>

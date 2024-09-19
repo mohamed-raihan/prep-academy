@@ -2,11 +2,14 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './footer.css';
 import Footerlogo from '../assets/images/footerlogo.png'
+import Data from '../Data.json'
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Container>
+      {Data.cat.map((items,index)=>(
+        <React.Fragment key={index}>
+ <Container>
         <Row>
          
           <Col md={4} className="footer-section">
@@ -45,9 +48,7 @@ const Footer = () => {
 
          
           <Col md={4} className="footer-section">
-<p>Are you ready to conquer the world? Your CAT 2024 
-    journey might seem daunting, but remember,
-     every great achievement starts with a single step.</p>
+<p>{items.Footer.text}</p>
            <div className="mt-3" style={{width:"186px",height:"53px"}}>
             <img src={Footerlogo} alt="" />
            </div>
@@ -64,6 +65,9 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
+        </React.Fragment>
+      ))}
+     
     </footer>
   );
 };
